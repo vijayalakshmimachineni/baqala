@@ -1,0 +1,1785 @@
+2020-09-28 9:26:06 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+2021-08-04 18:30:18 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+2021-08-04 21:49:12 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+2021-08-04 22:31:07 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+2021-08-05 11:13:46 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 298
+----------------------------------------------------------------
+2021-08-09 20:16:42 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 299
+----------------------------------------------------------------
+2021-08-09 20:18:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 299
+----------------------------------------------------------------
+2021-08-09 20:22:24 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 299
+----------------------------------------------------------------
+2021-08-09 20:25:54 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 299
+----------------------------------------------------------------
+2021-08-09 20:41:44 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 299
+----------------------------------------------------------------
+2021-08-09 20:42:59 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 299
+----------------------------------------------------------------
+2021-11-01 21:09:03 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 299
+----------------------------------------------------------------
+2021-11-01 21:10:54 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+MOD: POWr.io Multi Slider Navigation
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 299
+----------------------------------------------------------------
+2021-11-01 21:11:47 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+2021-11-09 13:43:11 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Advanced Purchased Products Report
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+2021-11-09 13:49:13 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Advanced Purchased Products Report
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------
+2021-11-09 13:52:00 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Advanced Purchased Products Report
+----------------------------------------------------------------
+MOD: Default timezone for PHP and Database
+
+FILE: system/library/db.php
+REGEX: ~(.*this->)(.*)(->query.*)~
+LINE: 45
+----------------------------------------------------------------
+MOD: Email Verification
+
+FILE: admin/language/en-gb/extension/dashboard/activity.php
+CODE: <?php
+LINE: 1
+
+FILE: catalog/controller/mail/register.php
+CODE: $this->load->language('mail/register');
+LINE: 18
+CODE: $data['text_approval'] = $this->language->get('text_approval');
+LINE: 22
+CODE: $data['login'] = $this->url->link('account/login', '', true);
+LINE: 42
+CODE: $template->data['account_login'] = $this->url->link('account/login');
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/account/success.php
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 27
+CODE: $data['text_message'] = sprintf($this->language->get('text_approval')
+LINE: 44
+
+FILE: catalog/controller/account/register.php
+CODE: $this->customer->login($this->request->post['email'
+LINE: 28
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->model_account_customer->editCustomer($this->customer->getId(), $this->request->post);
+LINE: 23
+
+FILE: catalog/controller/account/login.php
+CODE: $this->error['warning'] = $this->language->get('error_approved');
+LINE: 169
+
+FILE: catalog/controller/checkout/login.php
+CODE: $json['error']['warning'] = $this->language->get('error_approved');
+LINE: 45
+
+FILE: admin/model/customer/customer.php
+CODE: public function deleteCustomer($customer_id) {
+LINE: 57
+----------------------------------------------------------------
+MOD: Inspire Newsletter
+----------------------------------------------------------------
+MOD: Inspire QuickView
+
+FILE: catalog/controller/common/header.php
+CODE: $data['title'] = $this->document->getTitle();
+LINE: 29
+----------------------------------------------------------------
+MOD: Manufacturer List
+----------------------------------------------------------------
+MOD: Order Notification-Sipariş Bilgilendirmesi
+
+FILE: admin/language/en-gb/common/header.php
+CODE: $_['text_profile']
+LINE: 12
+
+FILE: admin/language/tr-tr/common/header.php
+CODE: $_['text_profile']
+LINE: 14
+
+FILE: admin/controller/common/header.php
+CODE: $data['profile'] = $this->url->link('common/profile', 'user_token=' . $this->session->data['user_token'], true);
+LINE: 72
+
+FILE: admin/view/template/common/header.twig
+CODE: <ul class="nav navbar-nav navbar-right">
+LINE: 79
+----------------------------------------------------------------

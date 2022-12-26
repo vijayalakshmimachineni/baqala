@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="fa fa-shopping-cart"></i> {{ heading_title }}</h3>
+  </div>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <td class="text-right">{{ 'product name' }}</td>
+          <td>{{ 'quantity' }}</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% if products %}
+        {% for product in products %}
+        <tr>
+          <td class="text-right">{{ product.model }}</td>
+          <td>{{ product.quantity }}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+          <td class="text-center" colspan="6">{{ text_no_results }}</td>
+        </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>

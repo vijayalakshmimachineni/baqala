@@ -1,0 +1,13 @@
+Reason8 - info@reason8.com.au
+
+No files over written, upload and install via OCMOD installer.
+(Extensions > Extension installer , remember to refresh modifications after install)
+
+
+Make sure you go to Admin > System > User > User Groups and allow access permissions
+
+Currently set to view products with 1 or less in report.
+
+View report via Reports > Products > Out of Stock Report
+
+Tested  and working on Opencart Version 2.0.3.1
